@@ -1,0 +1,19 @@
+<script>
+    function prom(pn) {
+        return new Promise(function (res, rej) {
+            fetch('https://jsonplaceholder.typicode.com/todos/1')
+                .then(response => response.json())
+                .then(json => console.log(json))
+        })
+    }
+
+    //prom(true)
+    prom(true).then((Abhi) => {
+        console.log(Abhi)
+    }).catch((Error) => {
+        console.log(Error)
+    })
+
+    // console.log(prom(false))
+    console.log("hello abhi")   
+</script>
