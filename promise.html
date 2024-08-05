@@ -1,0 +1,21 @@
+<script>
+    function prom(pn){
+        return new Promise(function(res,rej){
+            if(pn){
+                res("yes")
+            }else{
+                rej("no")
+            }
+        })
+    }
+    
+    //prom(true)
+    prom(false).then((Abhi)=>{
+        document.write(Abhi)
+    }).catch((Error)=>{
+        console.log(Error)
+    })
+
+    console.log(prom(false))
+    console.log("hello abhi")   
+</script>
